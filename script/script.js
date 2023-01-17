@@ -1,11 +1,10 @@
 console.log("hello");
 const menu = document.querySelector('.menu-nav');
 const nav = document.querySelector('.nav');
-const allLinks = document.querySelectorAll("a");
+const allLinks = document.querySelectorAll("a:link");
 const header = document.querySelector(".header");
 const navContainer = document.querySelector(".nav-container");
 const goTopButton = document.querySelector(".go-to-up");
-
 const navAbserver = new IntersectionObserver(function(watchEntry, navObserver){
     console.log(watchEntry[0].isIntersecting);
     if(!watchEntry[0].isIntersecting){
@@ -21,18 +20,16 @@ const navAbserver = new IntersectionObserver(function(watchEntry, navObserver){
 });
 navAbserver.observe(header);
 
-if(menu){
-    menu.addEventListener('click', function (){
-        nav.classList.toggle('is-active');
-    })
-}
+
+menu.addEventListener('click', function (){
+    nav.classList.toggle('is-active');
+})
 
 allLinks.forEach( function (link){
     if(link.classList.contains("nav-link")){
         link.addEventListener('click', function (){
-            nav.classList.toggle('is-active');
+            nav.classList.remove('is-active');
         })
     }
-    
 })
 
