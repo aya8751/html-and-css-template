@@ -166,7 +166,7 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 30rem;
+        width: 23rem;
     }
     .info-text-box .input-box {
     width: 95%;
@@ -238,6 +238,13 @@
 .vedio-img:first-child::before {
     display: none;
 }
+.vedies-descrption .arrow{
+    display: none;
+}
+.plateform {
+    width: 10.5rem;
+}
+
 .testimonials {
     flex-direction: column;
     gap: 3.2rem;
