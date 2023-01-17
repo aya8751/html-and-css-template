@@ -62,8 +62,10 @@
         width: 19rem;
     }
     .vedio-img:first-child:after {
-        /* left: 63.7%; */
         display: none;
+    }
+    .vedio-img:first-child::before{
+        content:url('../Images/icons/video-icon.svg');
     }
     .footer-details {
         gap: 1rem;
@@ -235,9 +237,9 @@
 .box-details {
     width: 100%;
 }
-.vedio-img:first-child::before {
+/* .vedio-img:first-child::before {
     display: none;
-}
+} */
 .vedies-descrption .arrow{
     display: none;
 }
@@ -262,5 +264,9 @@
 .copy-right .download-buts button {
     width: 128px;
 }
-
+.go-to-up:link,
+.go-to-up:visited{
+    right: 1.3rem;
+    bottom: 1.3rem;
+}
 }
