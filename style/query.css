@@ -157,7 +157,9 @@
 .container {
     padding: 0 2.4rem;
   } */
-
+.header {
+    height: 90vh;
+}
   .heading-primary {
     padding-right: .5rem;
 }
@@ -168,7 +170,7 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 23rem;
+        width: 26rem;
     }
     .info-text-box .input-box {
     width: 95%;
