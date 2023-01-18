@@ -8,8 +8,16 @@ I did this simple project to practice using CSS and HTML in best practices to ge
   </a>
 </h3>
 
+<h3>Large Screen</h3>
+
 ![large-screen](largeScreen.png)
+
+<h3>Tablet Screen</h3>
+
 ![tablet-screen](tabletScreen.png)
+
+<h3>Small Screen</h3>
+
 ![small-screen](smallScreen.png)
 
 ### Made with :heart: 
