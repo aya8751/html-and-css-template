@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
 /*
 --- 01 TYPOGRAPHY SYSTEM
 - Font sizes (px)
@@ -39,10 +40,21 @@ logocolor
 #f67842
 #6b88f7
 #3bb094
+
 --- 05 SHADOWS
+box-shadow: rgb(100 100 111 / 20%) 0px 19px 30px -15px;
+box-shadow: rgb(100 100 111 / 10%) 0px 19px 30px -15px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+box-shadow: rgba(187, 187, 187, 0.39) 0px 1px 4px;
+box-shadow: rgb(0 0 0 / 16%) 0px 26px 36px 0px;
+
 --- 06 BORDER-RADIUS
-Default: 9px
+Default: 9px 
 Medium: 11px
+6px
+15px
+25px
+
 --- 07 WHITESPACE
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -77,24 +89,80 @@ body {
   padding: 0 3.2rem;
   margin: 0 auto; 
 }
-
+a{
+  text-decoration: none;
+}
+.heading-secandary{
+  font-size: 4.4rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+  line-height: 1.2;
+}
+.heading-terminal{
+  color: #ff5175;
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.nav-btn:link,
+.nav-btn:visited{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff ;
+    font-weight: 500;
+    font-size: 1.8rem;
+    background-color: #ff3e66;
+    padding: 1.2rem 2.4rem;
+    border-radius: 20px;
+}
+.nav-btn:hover,
+.nav-btn:active{
+    color: #fff ;
+    background-color: #ff5175;
+    box-shadow: 3px 3px 6px 0 rgba(0,0,0,0.09);
+}
+.flex-container{
+    display: flex;
+    gap: 1.6rem;
+}
+.btn:link,
+.btn:visited{
+    border-radius: 25px;
+    border: 1px solid #bdbdbf;
+    padding: 1.2rem 2.4rem;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: inherit;
+    font-weight: 500;
+}
+.btn:hover,
+.btn:active{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: #0e1133d3 ;
+}
+.more-details{
+  color: #565870;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.arrow{
+  justify-self: end;
+}
+.arrow .btn{
+  padding: 1.2rem;
+}
+.arrow .btn:first-child{
+  margin-right: 1.2rem;
+}
+hr{
+  margin: 2.4rem 0;
+  height: 1px;
+  background-color: #e7e7eb;
+  border: none;
+}
 .grid {
   display: grid;
   gap: 2.4rem;
-  /* column-gap: 6.4rem;
-  row-gap: 9.6rem; */
-}
-
-.grid--2-cols {
-  grid-template-columns: 1fr 1fr;
-}
-
-.grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
 }
 .flex{
   display: flex;
